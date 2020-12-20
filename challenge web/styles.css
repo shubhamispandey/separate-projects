@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+.left {
+  display: inline-block;
+  width: 55%;
+  float: left;
+  height: 100%;
+  padding: 30px 60px;
+}
+
+.right {
+  display: inline-block;
+  width: 45%;
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+h1 span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 3px solid rgb(238, 185, 39);
+  border-radius: 50%;
+}
+h1 div {
+  width: 40px;
+  display: inline-block;
+  line-height: 1;
+  font-size: 16px;
+}
+.main-text {
+  margin-top: 25%;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+}
+.main-text span:first-child {
+  display: block;
+  font-weight: 300;
+  color: goldenrod;
+}
+.main-text span:nth-child(2) {
+  font-weight: 500;
+}
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgb(92, 92, 92);
+}
+.input {
+  margin-top: 50px;
+}
+input {
+  border: 1px solid rgba(78, 78, 78, 0.384);
+  border-radius: 20px;
+  height: 35px;
+  background: rgb(255, 255, 255);
+  padding: 5px 15px;
+  outline: none;
+  width: 250px;
+}
+a {
+  width: 50px;
+  background: linear-gradient(rgb(247, 13, 72), rgb(255, 33, 70));
+  height: 35px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 2;
+  position: relative;
+  right: 50px;
+  top: 2px;
+}
