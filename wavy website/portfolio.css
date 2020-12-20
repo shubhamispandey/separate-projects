@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.portfolio {
+  padding: 100px 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__window {
+  flex-basis: 35%;
+  position: relative;
+  animation: bounce 6s linear infinite;
+}
+.portfolio__window img {
+  width: 450px;
+}
+.portfolio__window .boat-board {
+  position: absolute;
+  width: 300px;
+  height: 168px;
+  background: #000;
+  top: -50px;
+  left: 235px;
+}
+.portfolio__text {
+  flex-basis: 65%;
+}
+.portfolio__text a {
+  /* background: linear-gradient(to bottom, #fff, rgb(168, 168, 168));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; */
+  color: rgb(218, 237, 240);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, -30px) rotate(-5deg);
+  }
+  50% {
+    transform: translate(20px, -50px) rotate(0deg);
+  }
+  75% {
+    transform: translate(10px, -30px) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.portfolio-type-2,
+.portfolio-type-2 .portfolio__text,
+.portfolio-type-2 .boat-board {
+  transform: rotateY(180deg);
+}
+.portfolio-type-2 .portfolio__window {
+  animation: bounce 10s linear infinite;
+}
+
+.portfolio-1 .portfolio__window .boat-board {
+  background: url("web-img/natours.JPG");
+  background-size: cover;
+}
+.portfolio-2 .portfolio__window .boat-board {
+  background: url("web-img/trillo.JPG");
+  background-size: cover;
+}
+.portfolio-3 .portfolio__window .boat-board {
+  background: url("web-img/food.JPG");
+  background-size: cover;
+}
+.portfolio-4 .portfolio__window .boat-board {
+  background: url("web-img/guessno.JPG");
+  background-size: cover;
+}
+.portfolio-5 .portfolio__window .boat-board {
+  background: url("web-img/dice.JPG");
+  background-size: cover;
+}
+.portfolio-6 .portfolio__window .boat-board {
+  background: url("web-img/coming.JPG");
+  background-size: cover;
+}
+.portfolio-7 .portfolio__window .boat-board {
+  background: url("web-img/profilecard.JPG");
+  background-size: cover;
+}
+.portfolio-8 .portfolio__window .boat-board {
+  background: url("web-img/personalsite.JPG");
+  background-size: cover;
+}
+.portfolio-9 .portfolio__window .boat-board {
+  background: url("web-img/design.JPG");
+  background-size: cover;
+}
+.portfolio-10 .portfolio__window .boat-board {
+  background: url("web-img/pure\ HTML.JPG");
+  background-size: cover;
+}
