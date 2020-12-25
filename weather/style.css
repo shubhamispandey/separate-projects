@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000096), to(#00000027)), url("1.jpg");
+  background: linear-gradient(to bottom, #00000096, #00000027), url("1.jpg");
+  background-size: cover;
+  padding: 5rem 15rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.quote {
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.quote__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.quote__top p {
+  -ms-flex-preferred-size: 94%;
+      flex-basis: 94%;
+  font-size: 1.6rem;
+}
+
+.quote__top i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.397);
+}
+
+.quote__bot {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+}
+
+.weather {
+  margin-top: 20rem;
+  color: #fff;
+}
+
+.weather__desc {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.weather__time {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.weather__time h1 {
+  display: inline-block;
+  font-size: 16rem;
+  line-height: 1;
+}
+
+.weather__time span {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.weather__location {
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.darkmode {
+  position: absolute;
+  bottom: 10rem;
+  right: 10rem;
+  font-size: 1.4rem;
+}
+
+.darkmode input {
+  visibility: hidden;
+}
+
+.darkmode label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.darkmode label .span-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 7rem;
+  height: 3.5rem;
+  background-color: whitesmoke;
+  border-radius: 2rem;
+}
+
+.darkmode label .span-btn i {
+  font-size: 1.8rem;
+}
+
+.darkmode label .span-btn::before {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  background: #6d6d6d;
+  width: 3rem;
+  height: 3.0rem;
+  border-radius: 5rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  padding: 8rem 20rem;
+}
+
+.info .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.info__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.info__item p {
+  color: #7c7c7c;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.info__item h1 {
+  color: #000;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.darkmode label .span-btn-active::before {
+  left: 3.7rem;
+  top: 50%;
+}
+
+.info__dark {
+  background: #000;
+}
+
+.info__dark .info__item p {
+  color: #e7e7e7;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.info__dark .info__item h1 {
+  color: #52ec6b;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=style.css.map */

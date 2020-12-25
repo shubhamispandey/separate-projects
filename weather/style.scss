@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+main {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #00000096, #00000027), url('1.jpg');
+    background-size: cover;
+    padding: 5rem 15rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.quote {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+
+        p {
+            flex-basis: 94%;
+            font-size: 1.6rem;
+        }
+
+        i {
+            font-size: 1.6rem;
+            color: rgba(255, 255, 255, 0.397);
+        }
+    }
+
+    &__bot {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 1.2rem;
+    }
+}
+
+.weather {
+    margin-top: 20rem;
+    color: #fff;
+
+    &__desc {
+        text-transform: capitalize;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
+
+    &__time {
+        margin-top: 1.5rem;
+        display: inline-block;
+
+        h1 {
+            display: inline-block;
+            font-size: 16rem;
+            line-height: 1;
+        }
+
+        span {
+            font-size: 4rem;
+            font-weight: 300;
+        }
+    }
+    &__location{
+        letter-spacing: 5px;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+}
+
+.darkmode{
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
+    font-size: 1.4rem;
+
+    input{
+        visibility: hidden;
+    }
+
+    label{
+        display: inline-block;
+        cursor: pointer;
+        // width: 6rem;
+        // height: 2.5rem;
+        .span-btn{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            width: 7rem;
+            height: 3.5rem;
+            background-color: rgb(245, 245, 245);
+            border-radius: 2rem;
+            
+            i{
+                font-size: 1.8rem;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0.3rem;
+                top: 50%;
+                transform: translate(0%,-50%);
+                background: rgb(109, 109, 109);
+                width: 3rem;
+                height: 3.0rem;
+                border-radius: 5rem;
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+
+.info{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    padding: 8rem 20rem;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    &__item{
+        flex-basis: 50%;
+        p{
+            color: rgb(124, 124, 124);
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        h1{
+            color: #000;
+            font-size: 4rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+/// --------------js classes----------------------------------
+//------------------------------------------------------------
+
+
+.darkmode label .span-btn-active::before {
+    left: 3.7rem;
+  top: 50%;
+}
+.info__dark{
+    background: #000;
+    .info__item{
+        p{
+            color: rgb(231, 231, 231);
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        h1{
+            color: rgb(82, 236, 107);
+            font-size: 4rem;
+            letter-spacing: 2px;
+        }
+    }
+}
