@@ -37,11 +37,14 @@ main {
         p {
             flex-basis: 94%;
             font-size: 1.6rem;
+            display: none;
+            animation: animate-2 2s ease;
         }
 
         i {
             font-size: 1.6rem;
             color: rgba(255, 255, 255, 0.397);
+            cursor: pointer;
         }
     }
 
@@ -81,29 +84,31 @@ main {
             font-weight: 300;
         }
     }
-    &__location{
+
+    &__location {
         letter-spacing: 5px;
         font-weight: 500;
         font-size: 2rem;
     }
 }
 
-.darkmode{
+.darkmode {
     position: absolute;
     bottom: 10rem;
     right: 10rem;
     font-size: 1.4rem;
 
-    input{
+    input {
         visibility: hidden;
     }
 
-    label{
+    label {
         display: inline-block;
         cursor: pointer;
+
         // width: 6rem;
         // height: 2.5rem;
-        .span-btn{
+        .span-btn {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -112,17 +117,21 @@ main {
             height: 3.5rem;
             background-color: rgb(245, 245, 245);
             border-radius: 2rem;
-            
-            i{
+
+            i {
                 font-size: 1.8rem;
             }
 
-            &::before{
+            i:first-child {
+                color: rgb(146, 146, 146);
+            }
+
+            &::before {
                 content: "";
                 position: absolute;
                 left: 0.3rem;
                 top: 50%;
-                transform: translate(0%,-50%);
+                transform: translate(0%, -50%);
                 background: rgb(109, 109, 109);
                 width: 3rem;
                 height: 3.0rem;
@@ -133,12 +142,13 @@ main {
     }
 }
 
-.info{
+.info {
     position: relative;
     width: 100%;
     height: 60vh;
     padding: 8rem 20rem;
-    .wrapper{
+
+    .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -147,14 +157,17 @@ main {
         width: 100%;
         height: 100%;
     }
-    &__item{
+
+    &__item {
         flex-basis: 50%;
-        p{
+
+        p {
             color: rgb(124, 124, 124);
             font-size: 1.5rem;
             letter-spacing: 1px;
         }
-        h1{
+
+        h1 {
             color: #000;
             font-size: 4rem;
             letter-spacing: 2px;
@@ -166,22 +179,52 @@ main {
 //------------------------------------------------------------
 
 
+// ? dark mode
 .darkmode label .span-btn-active::before {
     left: 3.7rem;
-  top: 50%;
+    top: 50%;
 }
-.info__dark{
+
+.info__dark {
     background: #000;
-    .info__item{
-        p{
+
+    .info__item {
+        p {
             color: rgb(231, 231, 231);
             font-size: 1.5rem;
             letter-spacing: 1px;
         }
-        h1{
+
+        h1 {
             color: rgb(82, 236, 107);
             font-size: 4rem;
             letter-spacing: 2px;
         }
+    }
+}
+
+// ? quote generate
+.quote-btn {
+    animation: animate-1 2s ease-in-out;
+    transition: all 2s;
+}
+
+@keyframes animate-1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes animate-2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

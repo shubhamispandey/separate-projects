@@ -46,11 +46,15 @@ main {
   -ms-flex-preferred-size: 94%;
       flex-basis: 94%;
   font-size: 1.6rem;
+  display: none;
+  -webkit-animation: animate-2 2s ease;
+          animation: animate-2 2s ease;
 }
 
 .quote__top i {
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.397);
+  cursor: pointer;
 }
 
 .quote__bot {
@@ -132,6 +136,10 @@ main {
   font-size: 1.8rem;
 }
 
+.darkmode label .span-btn i:first-child {
+  color: #929292;
+}
+
 .darkmode label .span-btn::before {
   content: "";
   position: absolute;
@@ -208,5 +216,52 @@ main {
   color: #52ec6b;
   font-size: 4rem;
   letter-spacing: 2px;
+}
+
+.quote-btn {
+  -webkit-animation: animate-1 2s ease-in-out;
+          animation: animate-1 2s ease-in-out;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+@-webkit-keyframes animate-1 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes animate-1 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes animate-2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
