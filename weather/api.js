@@ -51,8 +51,10 @@ function timer() {
     let mins = times.getMinutes();
     let en = "AM";
 
-    if (hrs > 12) {
+    if (hrs > 11) {
         en = "PM";
+    }
+    if (hrs > 12) {
         hrs -= 12;
     }
     if (hrs < 10) {
