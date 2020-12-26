@@ -75,7 +75,7 @@ function backgroundTimer() {
         backgImg.style.background = `url('1.jpg')`;
         weatherText.textContent = `GOOD MORNING, IT'S CURRENTLY`;
     }
-    if(hrs >= 15 && hrs <= 19){
+    else if(hrs >= 15 && hrs <= 19){
         backgImg.style.background = `url('2.jpg')`;
         weatherText.textContent = `GOOD EVENING, IT'S CURRENTLY`;
     }

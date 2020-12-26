@@ -13,7 +13,7 @@ html {
 
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
     background: linear-gradient(to bottom, #00000096, #00000027), url('1.jpg');
@@ -115,7 +115,7 @@ main {
             position: relative;
             width: 7rem;
             height: 3.5rem;
-            background-color: rgb(245, 245, 245);
+            background-color: rgb(255, 255, 255);
             border-radius: 2rem;
 
             i {
@@ -132,7 +132,7 @@ main {
                 left: 0.3rem;
                 top: 50%;
                 transform: translate(0%, -50%);
-                background: rgb(109, 109, 109);
+                background: rgb(41, 41, 41);
                 width: 3rem;
                 height: 3.0rem;
                 border-radius: 5rem;

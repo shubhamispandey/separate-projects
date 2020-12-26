@@ -12,7 +12,7 @@ html {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(#00000096), to(#00000027)), url("1.jpg");
@@ -128,7 +128,7 @@ main {
   position: relative;
   width: 7rem;
   height: 3.5rem;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 2rem;
 }
 
@@ -147,7 +147,7 @@ main {
   top: 50%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  background: #6d6d6d;
+  background: #292929;
   width: 3rem;
   height: 3.0rem;
   border-radius: 5rem;
